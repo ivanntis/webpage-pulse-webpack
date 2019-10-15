@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="455" height="139" viewBox="0 0 455 139">
+    <defs>
+        <linearGradient id="a" x1="100%" x2="0%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="#16459D"/>
+            <stop offset="100%" stop-color="#437BDA"/>
+        </linearGradient>
+        <linearGradient id="b" x1="0%" x2="173.248%" y1="0%" y2="165.926%">
+            <stop offset="0%" stop-color="#FDC130"/>
+            <stop offset="100%" stop-color="#F69B31"/>
+        </linearGradient>
+        <rect id="d" width="38" height="72" x="17" y="-17" rx="6"/>
+        <filter id="c" width="231.6%" height="169.4%" x="-65.8%" y="-27.8%" filterUnits="objectBoundingBox">
+            <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="7.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.4 0 0 0 0 0.501960784 0 0 0 0 0.678431373 0 0 0 0.3 0"/>
+        </filter>
+        <linearGradient id="e" x1="100%" x2="0%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#F1F3F7"/>
+            <stop offset="32.971%" stop-color="#E9EBF3"/>
+            <stop offset="100%" stop-color="#F3F4F7"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill-rule="nonzero" stroke="#3A3E4A" stroke-width="4" d="M4 49.477c26.169 0 22.202 35.176 43.613 35.176C69.025 84.653 67.177 14 92.661 14s18.871 75.57 59.51 75.57c40.639 0 21.23-46.619 58.645-46.619 37.414 0 23.066 75.693 64.707 75.693 41.64 0 30.574-75.693 73.665-75.693 43.09 0 25.94 60.912 84.8 60.912"/>
+        <rect width="40" height="79" x="292" y="38" fill-rule="nonzero" stroke="#437BDA" stroke-width="4" rx="6"/>
+        <rect width="38" height="72" x="317" y="64" fill="url(#a)" fill-rule="nonzero" rx="6"/>
+        <rect width="40" height="80" x="40" y="3" fill="url(#a)" fill-rule="nonzero" rx="6" transform="rotate(90 60 43)"/>
+        <rect width="32" height="5" x="44.5" y="39.5" fill-rule="nonzero" stroke="#C1E0FF" rx="1"/>
+        <rect width="32" height="5" x="44.5" y="30.5" fill-rule="nonzero" stroke="#C1E0FF" rx="1"/>
+        <rect width="18" height="7" x="51" y="52" fill="url(#b)" rx="3.5"/>
+        <rect width="40" height="74" x="150" y="31" fill-rule="nonzero" stroke="#437BDA" stroke-width="4" rx="6" transform="rotate(90 170 68)"/>
+        <rect width="38" height="87" x="201" y="41" fill-rule="nonzero" stroke="#C1E0FF" stroke-width="4" rx="6"/>
+        <path fill-rule="nonzero" stroke="#F69B31" stroke-width="4" d="M5.85 98c37 0 32.018-69.808 56.763-69.808C82.177 28.192 82.177 76 107.661 76c32.339 0 25.812-45 59.51-45 33.699 0 28.46 82.926 58.645 82.926 30.184 0 27.23-67.28 64.707-67.28C334.973 46.646 317 137 364.188 137c44.67 0 15.812-92.218 84.8-92.218"/>
+        <circle cx="6" cy="97" r="6" fill="#F69B31" fill-rule="nonzero"/>
+        <circle cx="449" cy="45" r="6" fill="#F69B31" fill-rule="nonzero"/>
+        <rect width="28" height="15" x="267" y="16" fill="url(#b)" rx="2"/>
+        <rect width="41" height="76" x="155" fill="url(#a)" fill-rule="nonzero" rx="6"/>
+        <rect width="40" height="74" x="78" y="33" fill-rule="nonzero" stroke="#437BDA" stroke-width="4" rx="6"/>
+        <rect width="40" height="71" x="111" y="65" fill-rule="nonzero" stroke="#C1E0FF" stroke-width="4" rx="6"/>
+        <rect width="40" height="76" x="261" y="9" fill-rule="nonzero" stroke="#C1E0FF" stroke-width="4" rx="6"/>
+        <rect width="40" height="71" x="345.5" y="64.5" fill-rule="nonzero" stroke="#C1E0FF" stroke-width="4" rx="6" transform="rotate(90 365.5 100)"/>
+        <g transform="rotate(90 111.5 155.5)">
+            <use fill="#000" filter="url(#c)" xlink:href="#d"/>
+            <use fill="#FFF" xlink:href="#d"/>
+        </g>
+        <rect width="22" height="5" fill="url(#e)" rx="2" transform="translate(217 75)"/>
+        <rect width="22" height="5" fill="url(#e)" rx="2" transform="translate(217 88)"/>
+        <rect width="36" height="5" fill="url(#e)" rx="2" transform="translate(217 68)"/>
+        <rect width="30" height="9" fill="url(#e)" rx="2" transform="translate(249 84.808)"/>
+        <g transform="translate(381 48)">
+            <rect width="39" height="46" fill="url(#a)" fill-rule="nonzero" rx="6"/>
+            <g fill="#C1E0FF" opacity=".9" transform="translate(6 8)">
+                <ellipse cx="8.775" cy="8.617" rx="8.64" ry="8.617" transform="translate(5)"/>
+                <rect width="20.901" height="5.426" rx="1.28" transform="translate(3.21 13.404)"/>
+                <rect width="20.58" height="2.553" x="3.21" y="27.447" rx="1.277"/>
+                <rect width="27" height="2.553" y="22.34" rx="1.277"/>
+            </g>
+        </g>
+        <rect width="32" height="5" x="159.5" y="23.5" fill-rule="nonzero" stroke="#C1E0FF" rx="1"/>
+        <path fill="#C1E0FF" fill-rule="nonzero" d="M159 16h17v3h-17z"/>
+        <rect width="18" height="7" x="159" y="38" fill="url(#b)" rx="3.5"/>
+        <rect width="18" height="7" x="127" y="123" fill="url(#b)" rx="3.5"/>
+    </g>
+</svg>

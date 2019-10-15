@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+$size-principal: 6rem;
+$size-title: 3.2rem;
+$size-desc: 1.8rem;
+$color-desc: #c4d4e3;
+$color-title: #fff;
+$margin-comp: 0.9rem 0;
+
+
+html {
+    font-size: 10px;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    top: 0px;
+    z-index: 999;
+    right: 0px;
+    color: $color-title;
+    font-size: $size-desc;
+    text-align: end;
+    opacity: 0.8;
+
+    >a {
+        cursor: pointer;
+        text-decoration: none;
+        padding: 0 1rem;
+
+        >p {
+            padding: 0 1rem;
+        }
+
+    }
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    z-index: 9999;
+
+    .mask {
+        height: 247px;
+        border-radius: 10px;
+        background-color: #1e2532;
+        width: 83vw;
+        color: white;
+    }
+    .foot{
+        &-title{
+            font-size: 32px;
+            margin: 12px 0;
+            >sup{
+                font-size: 14px;
+            }
+        }
+        &-sub{  
+            width: 322px;
+            color: #c4d4e3;
+            font-size: 16px;
+            text-align: center;
+            margin: 12px 0;
+
+        }
+
+        &-btn{
+            width: 133px;
+            font-size: 14px;
+            background-color: #1e2532;
+        }
+    }
+    .team {
+        width: 85%;
+        background-color: black;
+        height: 66px;
+
+        >p {
+            color: white
+        }
+    }
+}
+
+.lateral-bar {
+    width: 1.6rem;
+    height: 100vh;
+    position: fixed;
+    border-radius: 0 1.2rem 1.2rem 0;
+    box-shadow: 0 5px 15px 0 rgba(102, 128, 173, 0.3);
+    background-image: linear-gradient(to bottom, #fad961, #f76b1c);
+    z-index: 9998;
+}
+
+.principal {
+    &__logo {
+        width: 100%;
+
+        &__wrap {
+            flex-grow: 10;
+
+            &__adl {
+                width: 12rem;
+                object-fit: contain;
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+.principal,
+.library {
+    height: 100vh;
+    position: relative;
+    margin: 0 0;
+    box-sizing: border-box;
+
+    &__info {
+        width: 100%;
+
+        &__wrap {
+            flex-grow: 5;
+            flex: 5;
+        }
+
+        &__title {
+            color: $color-title;
+            font-size: $size-principal;
+            margin: $margin-comp;
+            font-weight: normal;
+            letter-spacing: -3.6px;
+        }
+
+        &__desc {
+            width: 37.9rem;
+
+
+        }
+
+        &__logo {
+            margin: 0 1.6rem;
+            flex-grow: 5;
+            flex: 5;
+            align-self: flex-end;
+            text-align: center;
+
+            >img {
+                min-width: 380px;
+                width: 100%;
+                height: auto;
+            }
+
+        }
+    }
+
+    &__dot {
+        position: absolute;
+        bottom: 5rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+}
+
+.ball {
+    width: 16px;
+    height: 16px;
+    box-shadow: 0 3px 6px 0 rgba(255, 255, 255, 0.3);
+    background-image: linear-gradient(to bottom, #fad961, #f76b1c);
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    transform-origin: 0px 16px;
+
+    &:hover {
+        border-radius: 0 100% 0 0;
+        transform: rotate(-45deg);
+    }
+}
+
+.white {
+    flex-grow: 1;
+}
+
+.components {
+    height: 100vh;
+    position: relative;
+
+    &__info {
+        width: 100%;
+
+        &__data {
+            color: #fff;
+            text-align: center;
+
+            &__sub {
+                font-size: 3.2rem;
+                letter-spacing: -1.9px;
+                font-weight: normal;
+
+                &--force {
+                    font-weight: bold;
+                }
+
+                &--exp {
+                    font-size: 1.4rem;
+                    letter-spacing: -0.8px;
+                    font-weight: bold;
+                }
+            }
+
+        }
+    }
+
+    &__dot {
+        position: absolute;
+        bottom: 5rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.library {
+    &__info {
+        &__wrap {
+            align-self: center;
+        }
+
+        &__data {
+            &__sub {
+                color: #fff;
+                text-align: left;
+                font-size: 3.2rem;
+                letter-spacing: -1.9px;
+                font-weight: normal;
+
+                &--force {
+                    font-weight: bold;
+                }
+
+            }
+
+            &__action {
+                margin-top: 3.0rem;
+            }
+
+            &__desc {
+                width: 37.9rem;
+
+            }
+        }
+    }
+}
+
+
+.desc-info {
+    font-size: $size-desc;
+    color: $color-desc;
+    margin: $margin-comp;
+    font-weight: normal;
+    letter-spacing: -1.1px;
+}
+
+button {
+    height: 40px;
+    border-radius: 100px;
+    border-width: 0.2rem;
+    padding: 0 16px;
+    background-color: black;
+    color: white;
+    margin-right: 1.4rem;
+}
+
+a {
+    font-size: 1.4rem;
+    color: white;
+    letter-spacing: -0.8px;
+
+}
+
+
+@media (max-width:900px) {
+    .white {
+        flex-grow: 0 !important;
+    }
+
+    .center {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .principal {
+        &__info {
+            &__desc {
+                width: 80%;
+            }
+
+            &__logo {
+                >img {
+                    min-width: 70vw !important;
+                    width: 80vw !important;
+                }
+            }
+        }
+    }
+
+    .library {
+        &__info {
+            &__logo {
+                >img {
+                    min-width: 60vw !important;
+                    width: 60vw !important;
+                }
+            }
+
+            &__data {
+                &__desc {
+                    width: 80vw;
+
+                }
+            }
+        }
+
+    }
+
+    .components {
+        &__info {
+            &__data {
+                &__desc {
+                    width: 80%;
+                    text-align: center;
+                }
+
+                &__logo {
+                    min-width: 70vw !important;
+                    width: 80vw !important;
+                }
+            }
+        }
+
+    }
+}
+
+/*@media all and (max-width:600px) {
+    .lateral-bar {
+    position: relative;
+    top: 100px;
+}
+}
+*/
