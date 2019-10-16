@@ -7,12 +7,13 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 var fs = require("fs");
 
-const globalChunks = ['tachyonsFlexbox', 'global'];
+const globalChunks = ['tachyonsFlexbox', 'global', 'pulseStyle'];
 
 const globalEntry = {
     app: './src/app.js',
     global: './src/styles/global.scss',
-    tachyonsFlexbox: 'tachyons-flexbox/css/tachyons-flexbox.min.css'
+    tachyonsFlexbox: 'tachyons-flexbox/css/tachyons-flexbox.min.css',
+    pulseStyle: '@pulse.io/components/dist/pulse/pulse.css'
 };
 
 var meta = {
