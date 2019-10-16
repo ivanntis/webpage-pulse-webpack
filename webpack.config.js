@@ -3,7 +3,6 @@ var CleanWebpackPlugin = require('clean-webpack-plugin'); //installed via npm
 const ImageminWebpack = require("imagemin-webpack");
 const imageminGifsicle = require("imagemin-gifsicle");
 var CopyWebpackPlugin = require('copy-webpack-plugin');
-var configWebpack = require('./config-webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 var fs = require("fs");
