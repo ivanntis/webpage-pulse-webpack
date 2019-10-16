@@ -2,5 +2,9 @@
     --bckg: #15171a;   
 }
 html{     
+    
+    font-size: 10px;
     background-color: var(--bckg);
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }

@@ -8,15 +8,6 @@ $color-desc: #c4d4e3;
 $color-title: #fff;
 $margin-comp: 0.9rem 0;
 
-
-html {
-    font-size: 10px;
-    background-color: black;
-    font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth;
-
-}
-
 body {
     margin: 0;
 }
@@ -24,7 +15,7 @@ body {
 header {
     position: fixed;
     width: 100%;
-    background-color: black;
+    background-color: var(--bckg);
     top: 0px;
     z-index: 999;
     right: 0px;
