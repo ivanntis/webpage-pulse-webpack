@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <script src="https://unpkg.com/@pulse.io/components@0.32.3/dist/pulse.js"></script>
-    
+
 </head>
+
 <body>
     <pulse-flowtm>
         <div slot="header">
-            Cualquier cosa
+            <div class="header--container">
+                <div class="header--container--logo flex row items-center">
+                    <img src="assets/imgs/logo.svg" alt="logo">
+                    <p class>PulseIO</p>
+                </div>
+            </div>
         </div>
         <div slot="content">
-            <div class="pulse-grid">
-                <div class="row">
-                    <div class="col-xs-6">
-                        <pulse-card color="warn" elevation="4">
-                            Hola Mundo
-                        </pulse-card>
+            <div class="pulse-grid items-center">
+                <div  class="row working-content">
+                    <div class="row order-lg-2 col-xs-12 col-md-12 col-lg-6 items-center justify-center">
+                        <div class="shadown-image">
+                            <img class="desc-grpah" src="assets/imgs/working/working.png">
+                        </div>
+
                     </div>
-                    <div class="col-xs-6">derecho</div>
+                    <div
+                        class="row order-lg-1 col-xs-offset-0 col-md-offset-0 col-lg-offset-1  col-xs-12 col-md-12 col-lg-4 items-center">
+                        <div>
+                            <p class="  title col-xs-12">
+                                Coming
+                                Soon
+                            </p>
+                            <p class=" row description col-xs-12">
+                                We are working on this page, but you still can explore other things. Come back other
+                                day.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
             </div>

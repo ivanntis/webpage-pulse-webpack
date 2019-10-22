@@ -1,3 +1,42 @@
 :root {
-    --pulse-flowtx-header: var(--bckg);     
+    --pulse-flowtx-header: var(--bckg);
 }
+
+.desc-grpah {
+    position: relative;
+    z-index: 1;
+}
+
+.working-content {
+    height: calc(100vh - 140px);
+    min-width: 320px;
+}
+
+.shadown-image {
+    position: relative;
+    width: max-content;
+    height: max-content;
+    padding: 10%;
+    border-radius: 261px;
+    background-image: radial-gradient(circle at 50% 50%, #594590B3, #1e2b35B3 40%, #15171aB3 61%);
+   
+}
+
+
+@media only screen and (min-width:480px) {
+    .shadown-image {
+        padding: 15%;
+    }
+}
+
+@media only screen and (min-width:540px) {
+    .shadown-image {
+        padding: 20%;
+    }
+}
+
+// @media only screen and (min-width:768px) { 
+//     .shadown-image {
+//         padding: 10%;
+//     }
+// }
