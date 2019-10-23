@@ -59,11 +59,13 @@ html{
 
 .header{
     &--container{
+        
         &--logo{
           color: #ffffff;
+          text-decoration: none;
           font-size: 18px;
           > p {
-            padding: 0 4px;
+            padding: 2px 4px 0px 4px;
             line-height: 0;
           }
         }
