@@ -11,10 +11,12 @@ const globalChunks = ['tachyonsFlexbox', 'global', 'pulseStyle'];
 
 const globalEntry = {
     app: './src/app.js',
+    index: './src/index.js',
     global: './src/styles/global.scss',
     tachyonsFlexbox: 'tachyons-flexbox/css/tachyons-flexbox.min.css',
     pulseStyle: '@pulse.io/components/dist/pulse/pulse.css'
 };
+
 
 var meta = {
     'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no',
@@ -60,11 +62,17 @@ module.exports = {
         port: 4300
     },
     plugins: [
+        new CleanWebpackPlugin(['public']),
         new MiniCssExtractPlugin({
             // Options similar to the same options in webpackOptions.output
             // both options are optional
             filename: '[name].css',
             chunkFilename: '[id].css',
+        }),
+        new HtmlWebpackPlugin({
+            filename: `index.html`,
+            template: `./src/index.html`,
+            chunks: [],
         }),
         new ImageminWebpack({
             bail: false, // Ignore errors on corrupted images
@@ -78,36 +86,34 @@ module.exports = {
 
         new CopyWebpackPlugin([
             { from: 'src/assets/imgs', to: 'assets/imgs' }
-        ]),
-
-        new CleanWebpackPlugin(['public']),
-
+        ])
     ]
 
 }
 
-fs.readdirSync('./src/pages/').forEach((fs) => {
+fs.readdirSync('./src/pages/').forEach((fold) => {
     let pageEntry = [];
-    pageEntry[fs]=`./src/pages/${fs}/${fs}.js`;
+    pageEntry[fold] = `./src/pages/${fold}/${fold}.js`;
 
-    module.exports.entry = { ...module.exports.entry, ...pageEntry}
+    module.exports.entry = { ...module.exports.entry, ...pageEntry }
 
-    const filename = fs === 'index' ? 'index.html' : fs ;
+    // const filename = fold === 'index' ? 'index.html' : fold ;
     const page = new HtmlWebpackPlugin({
-        filename: filename,
-        template: `./src/pages/${fs}/${fs}.html`,
+        filename: `${fold}.html`,
+        template: `./src/pages/${fold}/${fold}.html`,
         chunks: [],
     });
+
+
     module.exports.plugins.push(page);
-    }
+}
 );
 
 module.exports.plugins
     .filter(p => p instanceof HtmlWebpackPlugin)
     .forEach(m => {
         const opt = m.options;
-        const filename = opt.filename === 'index.html' ? 'index' : opt.filename;
+        const filename = opt.filename.replace('.html', '');
         opt.chunks = [...opt.chunks, ...[filename], ...globalChunks];
         opt.meta = meta
     });
-
