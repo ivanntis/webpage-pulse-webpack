@@ -16,6 +16,11 @@ a {
     text-decoration: none;
 }
 
+.full-center {
+    width: 100%; 
+    text-align: center;
+}
+
 .title {
     font-size: 48px;
     font-weight: normal;
@@ -25,6 +30,18 @@ a {
     letter-spacing: -2px;
     color: #ffffff;
 
+}
+
+.subtitle {
+    width: 100%;
+    font-size: 32px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -1.92px;
+    color: #ffffff;
+    text-align: center;
 }
 
 .description {

@@ -1,0 +1,18 @@
+.lateral-bar {
+    width: 0.8rem;
+    height: 100vh;
+    position: fixed;
+    border-radius: 0 1.2rem 1.2rem 0;
+    box-shadow: 0 5px 15px 0 rgba(102, 128, 173, 0.3);
+    background-image: linear-gradient(to bottom, #fad961, #f76b1c);
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+@media only screen and (min-width:540px) {
+    .lateral-bar {
+        display: block;
+    }
+}
