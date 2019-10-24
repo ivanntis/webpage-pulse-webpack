@@ -11,6 +11,23 @@
     display: none;
 }
 
+.link {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.43;
+    text-decoration: underline;
+}
+
+section{
+    height: calc( 100vh -  140px );
+}
+sup{
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.84px;
+}
+
 @media only screen and (min-width:540px) {
     .lateral-bar {
         display: block;
