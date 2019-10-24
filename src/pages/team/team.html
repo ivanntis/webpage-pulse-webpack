@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <div id="team">Team 3</div>
-    </body>
+
+<head>
+    <script type="module" src="https://unpkg.com/@pulse.io/components@0.32.3/dist/pulse/pulse.esm.js"></script>
+</head>
+
+<body>
+    <pulse-flowtm>
+        <div slot="header">
+            <%= require('html-loader!../../partials/nav/nav.html') %>
+
+        </div>
+        <div slot="content">
+
+            Proximante
+        </div>
+    </pulse-flowtm>
+</body>
+
 </html>

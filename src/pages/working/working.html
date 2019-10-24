@@ -3,19 +3,13 @@
 
 <head>
     <script type="module" src="https://unpkg.com/@pulse.io/components@0.32.3/dist/pulse/pulse.esm.js"></script>
-
-
 </head>
 
 <body>
     <pulse-flowtm>
         <div slot="header">
-            <div class="header--container">
-                <a href="index.html" class="header--container--logo flex row items-center">
-                    <img src="assets/imgs/logo.svg" alt="logo">
-                    <p class>Pulse IO</p>
-                </a>
-            </div>
+                <%= require('html-loader!../../partials/nav/nav.html') %>
+            
         </div>
         <div slot="content">
             <div class="pulse-grid items-center">

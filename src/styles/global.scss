@@ -1,54 +1,61 @@
-:root{
-    --bckg: #15171a;   
+:root {
+    --bckg: #15171a;
+    --pulse-flowtx-header: var(--bckg);
 }
-html{     
-    
+
+html {
+
     font-size: 10px;
     background-color: var(--bckg);
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 }
 
-.title{
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.title {
     font-size: 48px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: -2px;
-    color: #ffffff;  
-    
+    color: #ffffff;
+
 }
 
-.description{
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  color: #c4d4e3;
+.description {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #c4d4e3;
 }
 
-.title, .description{
+.title,
+.description {
     padding: 4px;
     margin: 0;
 }
 
 @media only screen and (min-width:480px) {
-    .title {
-        
-    }
+    .title {}
 }
 
 @media only screen and (min-width:540px) {
     .title {
         font-size: 60px;
     }
-    .description{
+
+    .description {
         font-size: 16px;
     }
-     
+
 }
 
 // @media only screen and (min-width:768px) { 
@@ -57,17 +64,33 @@ html{
 //     }
 // }
 
-.header{
-    &--container{
-        
-        &--logo{
-          color: #ffffff;
-          text-decoration: none;
-          font-size: 18px;
-          > p {
-            padding: 2px 4px 0px 4px;
-            line-height: 0;
-          }
+.header {
+    &--container {
+        &--nav {
+            width: 100%;
+
+            &--menu {
+                list-style: none;
+                font-size: 16px;
+                text-align: center;
+                >li>a {
+                    color: #c4d4e3;
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+            }
+
+            &--logo {
+                color: #ffffff;
+                text-decoration: none;
+                font-size: 20px;
+
+                >p {
+                    padding: 2px 4px 0px 4px;
+                    line-height: 0;
+                }
+            }
         }
     }
 }

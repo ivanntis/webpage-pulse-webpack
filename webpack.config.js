@@ -10,11 +10,11 @@ var fs = require("fs");
 const globalChunks = ['tachyonsFlexbox', 'global', 'pulseStyle'];
 
 const globalEntry = {
-    app: './src/app.js',
-    index: './src/index.js',
-    global: './src/styles/global.scss',
+    app: './src/app.js',   
     tachyonsFlexbox: 'tachyons-flexbox/css/tachyons-flexbox.min.css',
-    pulseStyle: '@pulse.io/components/dist/pulse/pulse.css'
+    pulseStyle: '@pulse.io/components/dist/pulse/pulse.css',
+    global: './src/styles/global.scss',    
+    index: './src/index.js'
 };
 
 
