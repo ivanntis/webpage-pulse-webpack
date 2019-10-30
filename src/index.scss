@@ -19,17 +19,48 @@
     text-decoration: underline;
 }
 
-section{
-    height: calc( 100vh -  140px );
+section {
+    height: 100vh;
+    top: -140px;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    >.dot {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        >.ball {
+            top: -30px;
+        }
+
+        >p {
+            color: #fff;
+            line-height: 1.43;
+            font-size: 14px;
+        }
+    }
 }
-sup{
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: -0.84px;
+
+sup {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -0.84px;
 }
 
 @media only screen and (min-width:540px) {
     .lateral-bar {
         display: block;
     }
+}
+
+.principal__dot {
+    position: relative;
+    left: 50%;
+    bottom: 0px;
 }

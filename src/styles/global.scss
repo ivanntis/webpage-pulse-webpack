@@ -120,3 +120,49 @@ a {
         }
     }
 }
+
+
+.ball {
+    width: 36px;
+    height: 36px;
+    border: solid 1px #c1e0ff;  
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-color: #c1e0ff;
+        border-radius: 50%;
+        box-shadow: 0 3px 6px 0 rgba(255, 255, 255, 0.3);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transform-origin: center;
+       
+    }  
+    &:hover::after{
+        animation-duration: 0.5s;
+        animation-name: active-dot;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }  
+    
+}
+
+@keyframes active-dot {
+    from {
+        width: 16px;
+        height: 16px;
+        box-shadow: 0 3px 6px 0 rgba(255, 255, 255, 0.3);
+
+    }
+  
+    to {
+        width: 24px;
+        height: 24px;
+        box-shadow: 0px 0px 6px 5px rgba(255, 255, 255, 0.3)
+    }
+  }
